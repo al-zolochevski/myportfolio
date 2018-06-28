@@ -1,0 +1,13 @@
+.media {
+    display: flex;
+    &__body {
+        flex: 1;
+    }
+    &__left {
+        margin-right: 10px;
+    }
+    &__right {
+        margin-left: 10px;
+    }
+}
+
