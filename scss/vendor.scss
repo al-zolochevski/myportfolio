@@ -5,7 +5,10 @@
 @import "https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap-grid.css";
 
 @import "../node_modules/reset-css/reset.css";
-$color-blue: green;
 
+@import "vendor/blaze";
 
-@import "../node_modules/blaze/scss/src/blaze";
+// Required
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
