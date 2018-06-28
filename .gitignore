@@ -1,3 +1,5 @@
 /prepros-6.config
 /.idea
 /css
+/node_modules
+/package-lock.json
