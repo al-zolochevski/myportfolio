@@ -5,7 +5,9 @@
 //@include make-responsive-classes(margin-right-10) {
 //    margin-right: 10px;
 //}
-
+.text-center {
+    text-align: center;
+}
 
 @mixin make-indents($indents) {
     @each $indent in $indents {
@@ -39,4 +41,4 @@
 }
 
 
-@include make-indents((10,20,30,40));
+@include make-indents((10,20,30,40,50,60,70,80,90,100,200));
