@@ -15,6 +15,26 @@
         .margin-bottom-#{$indent} {
             margin-bottom: #{$indent}px;
         }
+        .margin-top-#{$indent} {
+            margin-top: #{$indent}px;
+        }
+        .margin-left-#{$indent} {
+            margin-left: #{$indent}px;
+        }
+
+        .padding-right-#{$indent} {
+            padding-right: #{$indent}px;
+        }
+        .padding-bottom-#{$indent} {
+            padding-bottom: #{$indent}px;
+        }
+        .padding-top-#{$indent} {
+            padding-top: #{$indent}px;
+        }
+        .padding-left-#{$indent} {
+            padding-left: #{$indent}px;
+        }
+
     }
 }
 
