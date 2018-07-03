@@ -1,6 +1,5 @@
 body {
     font-family: 'Nunito', sans-serif;
-    text-transform: uppercase;
     font-weight: 300;
 }
 
@@ -14,4 +13,8 @@ a {
         color: inherit;
         text-decoration: inherit;
     }
+}
+
+span {
+    display: inline-block;
 }

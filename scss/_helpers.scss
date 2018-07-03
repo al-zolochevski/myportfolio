@@ -9,9 +9,18 @@
     text-align: center;
 }
 
-.lowercase:before {
-    content: "m" !important;
+.max-width-100 {
+    max-width: 100%;
 }
+
+.padding-3-rem {
+    padding: 3rem;
+}
+
+.padding-0 {
+    padding: 0;
+}
+
 
 @mixin make-indents($indents) {
     @each $indent in $indents {

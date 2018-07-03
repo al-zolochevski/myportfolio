@@ -1,10 +1,16 @@
 @import "../node_modules/@fortawesome/fontawesome-free/css/all.css";
+@import "../node_modules/ionicons/dist/css/ionicons.css";
+
 
 // TODO: offline
 //@import "https://fonts.googleapis.com/css?family=Nunito:300,400,700";
+
 @import "../node_modules/bootstrap/scss/bootstrap-grid";
 @import "../node_modules/bootstrap/scss/utilities/display";
 @import "../node_modules/bootstrap/scss/utilities/flex";
+
+//how to import font NUTINO for my project??
+// (do not work)->>>
 @font-face {
     font-family: 'Nunito', sans-serif;
     src: url('../fonts/Nunito/Nunito-Regular.ttf') format('truetype');
