@@ -1,0 +1,21 @@
+.aboutme {
+
+}
+
+.title {
+    position: relative;
+    text-transform: uppercase;
+    font-family: inherit;
+    font-size: 3rem;
+}
+
+.title:after {
+    content:' ';
+    position: absolute;
+    top:100%;
+    left:50%;
+    width: 130px;
+    border:1px solid #2e6fd1;
+    border-radius:4px;
+    transform:translateX(-50%);
+}

@@ -9,6 +9,10 @@
     text-align: center;
 }
 
+.lowercase:before {
+    content: "m" !important;
+}
+
 @mixin make-indents($indents) {
     @each $indent in $indents {
         .margin-right-#{$indent} {
