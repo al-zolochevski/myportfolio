@@ -1,28 +1,54 @@
 .contact {
     background: #16171f;
 }
-
 .input {
-    outline: none;
-    border: none;
-    background: inherit;
+    width: 100%;
+    background-color: rgba(58, 61, 73, 0.48);
+    border: 1px solid #191B1D;
     color: white;
-    letter-spacing: .4px;
-    font-size: 13px;
-    padding: 10px;
-    box-shadow: none;
-    border-bottom: 2px solid #fff;
-    font-family: Nunito, sans-serif;
+    text-transform: uppercase;
+    transition: all 0.4s;
+    padding: 1rem;
     &::placeholder {
-        opacity: .8;
-        text-transform: uppercase;
-        color: white;
-        font-style: italic;
-        font-weight: 400;
-        font-family: Nunito, sans-serif;
+        color: rgba(102, 103, 123, 0.78);
     }
-    &__message {
-        border: 2px solid #fff;
-    }
-
 }
+
+.textarea::placeholder {
+    font-size: 16px;
+}
+
+.btn-submit {
+    padding: 10px;
+    width: 10rem;
+    margin-left: 43% !important;
+}
+
+//.contact {
+//    background: #16171f;
+//}
+//
+//.input {
+//    outline: none;
+//    border: none;
+//    background: inherit;
+//    color: white;
+//    letter-spacing: .4px;
+//    font-size: 13px;
+//    padding: 10px;
+//    box-shadow: none;
+//    border-bottom: 2px solid #fff;
+//    font-family: Nunito, sans-serif;
+//    &::placeholder {
+//        opacity: .8;
+//        text-transform: uppercase;
+//        color: white;
+//        font-style: italic;
+//        font-weight: 400;
+//        font-family: Nunito, sans-serif;
+//    }
+//    &__message {
+//        border: 2px solid #fff;
+//    }
+//
+//}
