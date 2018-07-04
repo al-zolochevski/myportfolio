@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,700" rel="stylesheet">
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <link rel="stylesheet" href=vendor/jquery-plugin-circliful/css/jquery.circliful.css>
     <link rel="stylesheet" href="css/main.css">
     <title>Zolochevski</title>
 </head>
@@ -165,8 +167,43 @@
             </h3>
         </div>
     </div>
+ 
+<div class="row offset-1">
+    <div class="col-lg-3">
+        <div id="test-circle">
+        </div>
+    </div>
+</div>
 </section>
+
+
+<style>
+    #test-circle {
+        text-align: center;
+    }
+    #test-circle:after {
+        color: white;
+        content: "CSS HTML";
+        text-align: center;
+    }
+</style>
+
+<script src="vendor/jquery-plugin-circliful/js/jquery.circliful.js"></script>
 <script src="vendor/typewriter.js"></script>
 <script src="main.js"></script>
+
+
+<script>
+    $(document).ready(function () {
+        $("#test-circle").circliful({
+            animationStep: 5,
+            foregroundBorderWidth: 15,
+            backgroundBorderWidth: 0,
+            percent: 75,
+        });
+    });
+</script>
+
+
 </body>
 </html>
