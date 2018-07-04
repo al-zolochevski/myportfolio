@@ -69,7 +69,7 @@
             </h3>
         </div>
     
-        <div class="row margin-top-40">
+        <div class="row margin-top-60">
             <div class="col-lg-6 padding-3-rem">
                 <div class="about">
                     <div class="about__title">
@@ -89,7 +89,7 @@
                 </div>
             </div>
             <div class="col-lg-6 padding-0">
-                <img class="max-width-100" src="img/about/me.jpg" alt="">
+                <img class="about__img max-width-100" src="img/about/me.jpg" alt="">
             </div>
         </div>
     
@@ -97,10 +97,10 @@
         
             <div class="col-lg-6 padding-0">
                 <div style="position: relative;">
-                    <img style="position: absolute;
+                    <img class="about__img" style="position: absolute;
                 height : 357px;
                 width: 100%;"
-                         class="" src="img/about/what_i_do.jpg" alt="">
+                         src="img/about/what_i_do.jpg" alt="">
                 </div>
             </div>
         
@@ -147,7 +147,7 @@
         
             <div class="col-lg-6 padding-0">
                 <div style="position: relative;">
-                    <img style="position: absolute;
+                    <img class="about__img" style="position: absolute;
                 margin-top: -7px;
                 height : 357px;
                 width: 100%;"
@@ -159,7 +159,7 @@
     </div>
 </section>
 
-<section style="background-color: #191B1D;" class="slills margin-top-100" id="scills">
+<section style="background-color: #16171f;" class="slills margin-top-100" id="scills">
     <div class="container">
         <div class="row justify-content-center">
             <h3 style="color: white;" class="padding-top-70 title  padding-bottom-10">
@@ -175,8 +175,6 @@
     </div>
 </div>
 </section>
-
-
 <style>
     #test-circle {
         text-align: center;
@@ -187,6 +185,60 @@
         text-align: center;
     }
 </style>
+
+
+<section class="portfolio" id="portfolio">
+    <div class="container">
+        <div class="row justify-content-center">
+            <h3 class="title margin-top-100 margin-bottom-60 padding-bottom-10">
+                portfolio
+            </h3>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <div>
+                    <img class="max-width-100" src="img/portfolio/project-1.png" alt="">
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div>
+                    <img class="max-width-100" src="img/portfolio/project-2.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="contact" class="contact">
+    <div class="row justify-content-center">
+        <h3 style="color: white;" class=" margin-bottom-60 padding-top-200 title  padding-bottom-10">
+            get in touch
+        </h3>
+    </div>
+    
+    
+    <form class="form" action="">
+        <div class="row">
+            <div class="col-lg-10 offset-1">
+                <input placeholder="your name" class="input input__name width-100 margin-bottom-50" type="text">
+            </div>
+            
+            <div class=" offset-1 col-lg-5">
+                <input placeholder="your telephone" class="input input__name width-100 margin-bottom-50" type="text">
+            </div>
+            <div class="col-lg-5">
+                <input placeholder="your telephone" class="input input__name width-100 margin-bottom-50" type="text">
+            </div>
+        </div>
+        <div class="col-lg-10 offset-1">
+            <textarea placeholder="your message" class=" textarea input input__message width-100 margin-bottom-50"
+                      name="" id="" cols="30" rows="10">
+            </textarea>
+        </div>
+    </form>
+
+</section>
 
 <script src="vendor/jquery-plugin-circliful/js/jquery.circliful.js"></script>
 <script src="vendor/typewriter.js"></script>

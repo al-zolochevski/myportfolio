@@ -1,0 +1,28 @@
+.contact {
+    background: #16171f;
+}
+
+.input {
+    outline: none;
+    border: none;
+    background: inherit;
+    color: white;
+    letter-spacing: .4px;
+    font-size: 13px;
+    padding: 10px;
+    box-shadow: none;
+    border-bottom: 2px solid #fff;
+    font-family: Nunito, sans-serif;
+    &::placeholder {
+        opacity: .8;
+        text-transform: uppercase;
+        color: white;
+        font-style: italic;
+        font-weight: 400;
+        font-family: Nunito, sans-serif;
+    }
+    &__message {
+        border: 2px solid #fff;
+    }
+
+}
