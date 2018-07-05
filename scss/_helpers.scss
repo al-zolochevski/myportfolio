@@ -25,32 +25,53 @@
     padding: 0;
 }
 
+@mixin make-responsive-classes($class) {
+    .#{$class} {
+        @content
+    }
+    .#{$class}-sm {
+        @media (min-width: 768px) {
+            @content;
+        }
+    }
+    .#{$class}-upto-sm {
+        @media (max-width: 767px) {
+            @content;
+        }
+    }
+    .#{$class}-md {
+        @media (min-width: 992px) {
+            @content;
+        }
+    }
+
+}
 
 @mixin make-indents($indents) {
     @each $indent in $indents {
-        .margin-right-#{$indent} {
+        @include make-responsive-classes("margin-right-#{$indent}") {
             margin-right: #{$indent}px;
         }
-        .margin-bottom-#{$indent} {
+        @include make-responsive-classes("margin-bottom-#{$indent}") {
             margin-bottom: #{$indent}px;
         }
-        .margin-top-#{$indent} {
+        @include make-responsive-classes("margin-top-#{$indent}") {
             margin-top: #{$indent}px;
         }
-        .margin-left-#{$indent} {
+        @include make-responsive-classes("margin-left-#{$indent}") {
             margin-left: #{$indent}px;
         }
 
-        .padding-right-#{$indent} {
+        @include make-responsive-classes("padding-right-#{$indent}") {
             padding-right: #{$indent}px;
         }
-        .padding-bottom-#{$indent} {
+        @include make-responsive-classes("padding-bottom-#{$indent}") {
             padding-bottom: #{$indent}px;
         }
-        .padding-top-#{$indent} {
+        @include make-responsive-classes("padding-top-#{$indent}") {
             padding-top: #{$indent}px;
         }
-        .padding-left-#{$indent} {
+        @include make-responsive-classes("padding-left-#{$indent}") {
             padding-left: #{$indent}px;
         }
 
@@ -59,3 +80,8 @@
 
 
 @include make-indents((10,20,30,40,50,60,70,80,90,100,200));
+
+
+@include make-responsive-classes("hidden") {
+    display: none;
+}
