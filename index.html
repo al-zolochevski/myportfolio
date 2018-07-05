@@ -255,14 +255,14 @@
 <!--get in touch-->
 <!--</h3>-->
 <!--</div>-->
-<!---->
-<!---->
+
+
 <!--<form class="form" action="">-->
 <!--<div class="row">-->
 <!--<div class="col-lg-10 offset-1">-->
 <!--<input placeholder="your name" class="input input__name width-100 margin-bottom-50" type="text">-->
 <!--</div>-->
-<!---->
+
 <!--<div class=" offset-1 col-lg-5">-->
 <!--<input placeholder="your telephone" class="input input__name width-100 margin-bottom-50" type="text">-->
 <!--</div>-->
@@ -284,14 +284,28 @@
 
 
 <script>
+
+    $.fn.isOnScreen = function () {
+        var rect = this[0].getBoundingClientRect();
+        return (rect.top >= 0) && (rect.bottom <= window.innerHeight);
+    };
+    
     $(document).ready(function () {
-        $("#test-circle").circliful({
-            animationStep: 5,
-            foregroundBorderWidth: 15,
-            backgroundBorderWidth: 0,
-            percent: 75,
-        });
+
     });
+    $(window).on("scroll", function () {
+        var elem = $("#test-circle");
+        var circleWasNotDrawn = !elem.hasClass("svg-container");
+        
+        if (elem.isOnScreen() && circleWasNotDrawn) {
+            elem.circliful({
+                animationStep: 5,
+                foregroundBorderWidth: 15,
+                backgroundBorderWidth: 0,
+                percent: 75
+            });
+        }
+    })
 </script>
 
 
