@@ -1,0 +1,36 @@
+.btn-left {
+    bottom: 5%;
+    position: absolute;
+    width: 8rem;
+    left: 25%;
+}
+
+.btn-right {
+    bottom: 5%;
+    position: absolute;
+    width: 8rem;
+    right: 25%;
+}
+
+.project__title {
+    font-size: 1.8rem;
+    color: white;
+    padding-bottom: 2%;
+    border-bottom: 1.5px solid #2e6fd1;
+    position: absolute;
+    left: 40%;
+    top: 20%;
+    opacity: .9;
+}
+
+.project__text {
+    color: white;
+    position: absolute;
+    left: 12%;
+    top: 40%;
+    opacity: .9;
+}
+
+.img-shadow {
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+}

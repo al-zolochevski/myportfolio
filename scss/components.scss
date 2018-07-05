@@ -11,3 +11,21 @@
     }
 }
 
+.holder{
+    position:relative;
+}
+
+.block{
+    transition:  .5s;
+    position:absolute;
+    left:0;
+    bottom:0;
+    right:0;
+    top:0;
+    background: rgba(0, 0, 0, 0.92);
+    opacity: 0;
+}
+
+.holder:hover .block{
+    opacity: 1;
+}

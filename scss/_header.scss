@@ -17,7 +17,7 @@
 }
 
 .navbar {
-
+    text-transform: uppercase;
 }
 
 .navbar__list {
@@ -26,6 +26,10 @@
 
 .navbar__item {
     padding: 15px;
+    &:hover {
+        color: #2e6fd1;
+        transition: color .3s;
+    }
 }
 
 .css-typing {

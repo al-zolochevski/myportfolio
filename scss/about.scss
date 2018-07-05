@@ -3,7 +3,7 @@
 }
 
 .title {
-    color: #383838;
+    color: #555555;
     position: relative;
     text-transform: uppercase;
     font-family: inherit;
@@ -22,12 +22,11 @@
 }
 
 .about {
-    color: #383838;
+    color: #555555;
 }
 
 .about__img {
-    border-radius: 5px;
-    box-shadow: -13px 15px 48px -18px rgba(0, 0, 0,0.75);
+    box-shadow: -1px 1px 33px -7px rgba(0, 0, 0, 0.75);
 }
 
 .about__icon {
@@ -50,7 +49,7 @@
 }
 
 .about__text {
-    font-size: 1.2rem;
+    font-size: 1.17rem;
     line-height: 1.75rem;
     font-weight: 300;
     text-align: left;
