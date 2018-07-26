@@ -58,6 +58,7 @@
                     </li>
                 </ul>
             </div>
+        </div>
     </div>
 </header>
 
@@ -164,18 +165,19 @@
             </h3>
         </div>
     </div>
- 
-<div class="row offset-1">
-    <div class="col-lg-3">
-        <div id="test-circle">
+    
+    <div class="row offset-1">
+        <div class="col-lg-3">
+            <div id="test-circle">
+            </div>
         </div>
     </div>
-</div>
 </section>
 <style>
     #test-circle {
         text-align: center;
     }
+
     #test-circle:after {
         color: white;
         content: "CSS HTML";
@@ -193,25 +195,47 @@
         </div>
         <div class="row">
             <div class="col-lg-6">
-                <div class="holder">
-                    <img class="img-shadow max-width-100" src="img/portfolio/project-1.png" alt="">
-                    <div class="block">
-                        <div class="project__title">
-                            Agency
+    
+    
+                <div class="card">
+                    <div class="card__side card__side--front">
+                        <div class="card__picture card__picture--1">
+                            &nbsp;
                         </div>
-                        <div class="project__text">
-                            A free Bootstrap theme for your agency or small business.
+                        <h4 class="card__heading">
+            
+                        </h4>
+                        <div class="card__details">
+            
                         </div>
-                        <button type="button" style="margin: auto;" class="btn-left c-button c-button--info">GITHUB
-                        </button>
-                        <button type="button" style="margin: auto;" class="btn-right c-button c-button--info">VISIT
-                        </button>
+                    </div>
+                    <div class="card__side card__side--back card__side--back-1">
                     </div>
                 </div>
+    
+    
+                <!--<div class="holder">-->
+                <!--<img class="img-shadow max-width-100" src="img/portfolio/project-1.png" alt="">-->
+                <!--<div class="block">-->
+                <!--<div class="project__title">-->
+                <!--Agency-->
+                <!--</div>-->
+                <!--<div class="project__text">-->
+                <!--A free Bootstrap theme for your agency or small business.-->
+                <!--</div>-->
+                <!--<button type="button" style="margin: auto;" class="btn-left c-button c-button&#45;&#45;info">GITHUB-->
+                <!--</button>-->
+                <!--<button type="button" style="margin: auto;" class="btn-right c-button c-button&#45;&#45;info">VISIT-->
+                <!--</button>-->
+                <!--</div>-->
+                <!--</div>-->
+                
+                
+                
             </div>
             <div class="col-lg-6">
                 <div>
-                    <img class="img-shadow max-width-100" src="img/portfolio/project-2.png" alt="">
+                    <img class="img-shadow max-width-100" src="img/portfolio/project-1.png" alt="">
                 </div>
             </div>
         </div>
@@ -231,7 +255,8 @@
                 <form class="" action="">
                     <input placeholder="your name" class="input margin-bottom-30" type="text">
                     <input placeholder="your email" class="input margin-bottom-30" type="text">
-                    <textarea placeholder="your message" class="textarea input margin-bottom-30" name="" id="" cols="30" rows="10"></textarea>
+                    <textarea placeholder="your message" class="textarea input margin-bottom-30" name="" id="" cols="30"
+                              rows="10"></textarea>
                 </form>
             </div>
         </div>
@@ -239,6 +264,7 @@
         </button>
     </div>
 </section>
+
 <footer style="background: #16171f; color: rgba(102, 103, 123, 0.78);" class="footer" id="footer">
     <div class="container">
         <div class="row justify-content-center">
@@ -289,14 +315,14 @@
         var rect = this[0].getBoundingClientRect();
         return (rect.top >= 0) && (rect.bottom <= window.innerHeight);
     };
-    
+
     $(document).ready(function () {
 
     });
     $(window).on("scroll", function () {
         var elem = $("#test-circle");
         var circleWasNotDrawn = !elem.hasClass("svg-container");
-        
+
         if (elem.isOnScreen() && circleWasNotDrawn) {
             elem.circliful({
                 animationStep: 5,
