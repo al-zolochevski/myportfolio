@@ -27,7 +27,8 @@
             transform: rotateY(180deg);
 
             &-1 {
-                background: linear-gradient(to right bottom, #2e6fd1, #193468);
+                background: linear-gradient(to right bottom, rgba(7, 7, 14, 0.91), rgba(22, 23, 31, 0.9)), url("../img/portfolio/project-1.png");
+                background-size: cover;
             }
 
             &-2 {

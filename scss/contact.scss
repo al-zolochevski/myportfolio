@@ -9,8 +9,17 @@
     text-transform: uppercase;
     outline-color: #2b68c4;
     padding: 1rem;
+
     &::placeholder {
         color: rgba(102, 103, 123, 0.78);
+        opacity: 1;
+    }
+
+    &:focus::-webkit-input-placeholder {
+        opacity: 0;
+        letter-spacing: 20px;
+        text-indent: 100px;
+        transition: all 1s ease;
     }
 }
 
