@@ -81,6 +81,10 @@
             padding-left: #{$indent}px;
         }
 
+        @include make-responsive-classes("padding-#{$indent}") {
+            padding: #{$indent}px;
+        }
+
     }
 }
 

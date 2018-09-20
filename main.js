@@ -58,7 +58,7 @@ $(window).on("scroll", function () {
             percentageX: 101,
             foregroundBorderWidth: 6,
             backgroundBorderWidth: 0,
-            percent: 85,
+            percent: 75,
             foregroundColor: "#2e6fd1"
         });
     }
@@ -74,9 +74,15 @@ $(window).on("scroll", function () {
             percentageX: 101,
             foregroundBorderWidth: 6,
             backgroundBorderWidth: 0,
-            percent: 85,
+            percent: 98,
             foregroundColor: "#2e6fd1"
         });
     }
 
 });
+
+// $(".checked, #mobile-menu").toggle()
+// $('.mobNav').click(function () {
+//     // $(".checked").toggle();
+//     $("#mobile-menu").toggle()
+// });

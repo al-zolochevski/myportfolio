@@ -1,0 +1,88 @@
+@import "abstracts/mixins-responsive";
+
+#test-circle {
+    text-align: center;
+
+    &::after {
+        color: rgba(255, 255, 255, 0.91);
+        content: "CSS / HTML";
+        text-align: center;
+        font-size: 21px;
+        font-weight: 300;
+        @include respond(phone) {
+            margin: 0;
+            width: 50% !important;
+        }
+        @include respond(tab-land) {
+        }
+        font-size: 17px;
+    }
+}
+
+#test-circle2 {
+    text-align: center;
+
+    &::after {
+        color: rgba(255, 255, 255, 0.91);
+        content: "UI / UX";
+        text-align: center;
+        font-size: 21px;
+        font-weight: 300;
+        @include respond(phone) {
+            margin: 0;
+            width: 50% !important;
+        }
+        @include respond(tab-land) {
+        }
+        font-size: 17px;
+    }
+}
+
+#test-circle3 {
+    text-align: center;
+
+    &::after {
+        color: rgba(255, 255, 255, 0.91);
+        content: "JS / jQuery";
+        text-align: center;
+        font-size: 21px;
+        font-weight: 300;
+        @include respond(phone) {
+            margin: 0;
+            width: 50% !important;
+        }
+        @include respond(tab-land) {
+        }
+        font-size: 17px;
+    }
+}
+
+#test-circle4 {
+    text-align: center;
+
+    &::after {
+        color: rgba(255, 255, 255, 0.91);
+        content: "Communication";
+        text-align: center;
+        font-size: 21px;
+        font-weight: 300;
+        @include respond(phone) {
+            margin: 0;
+            width: 50% !important;
+        }
+        @include respond(tab-land) {
+        }
+        font-size: 17px;
+    }
+}
+
+.circle-md {
+    @include respond(phone) {
+        margin: 0;
+        width: 50% !important;
+    }
+    @include respond(tab-land) {
+        width: 25%;
+        padding: 0;
+    }
+}

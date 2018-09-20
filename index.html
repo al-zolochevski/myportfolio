@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,700" rel="stylesheet">
     <script src="node_modules/jquery/dist/jquery.js"></script>
     <link rel="stylesheet" href=vendor/jquery-plugin-circliful/css/jquery.circliful.css>
@@ -9,31 +10,57 @@
     <title>Zolochevski</title>
 </head>
 <body>
+
 <header class="header" id="header">
-    <div class="o-container o-container--large padding-top-20">
-        <div class="media">
-            <div class="media__left d-flex align-items-center" style="align-items: center">
-                <div>
-                    <img class="margin-right-10" src="img/header/logo-light.png" width="40" alt="">
+    
+    <label class="hidden-sm mobNav">
+        <input class="checked" type="checkbox">
+        <span class="menu">
+        <span class="hamburger"></span>
+      </span>
+        <ul id="mobile-menu">
+            <li>
+                <a class="link" href="#top">Home</a>
+            </li>
+            <li>
+                <a class="link" href="#">About</a>
+            </li>
+            <li>
+                <a class="link" href="#">Contact</a>
+            </li>
+            <li>
+                <a class="link" href="#">Contact</a>
+            </li>
+        </ul>
+    </label>
+    
+    <div class="container padding-top-20">
+        <div class="heading hidden-upto-sm">
+            
+            <div class="media">
+                <div class="media__left d-flex align-items-center" style="align-items: center">
+                    <div>
+                        <img class="margin-right-10" src="img/header/logo-light.png" width="40" alt="">
+                    </div>
+                    <span class="logo__text">zolochevski</span>
                 </div>
-                <span class="logo__text">zolochevski</span>
-            </div>
-            <div class="media__body"></div>
-            <div class="media__right">
-                
-                <div class="navbar">
-                    <ul class="navbar__list u-display-flex ">
-                        <li class="navbar__item"><a href="#">about me</a></li>
-                        <li class="navbar__item"><a href="#">tools</a></li>
-                        <li class="navbar__item"><a href="#">portfolio</a></li>
-                        <li class="navbar__item"><a href="#">contact</a></li>
-                    </ul>
+                <div class="media__body"></div>
+                <div class="media__right">
+                    
+                    <div class="navbar">
+                        <ul class="navbar__list u-display-flex ">
+                            <li class="navbar__item"><a href="#">about me</a></li>
+                            <li class="navbar__item"><a href="#">tools</a></li>
+                            <li class="navbar__item"><a href="#">portfolio</a></li>
+                            <li class="navbar__item"><a href="#">contact</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="text-center">
-            <h2 class="js-typing css-typing margin-top-200">
-                Hi, &nbsp; i'm &nbsp; Aleksei &nbsp; Zolochevskiy
+            <h2 class="js-typing css-typing margin-top-200 margin-top-100-upto-sm">
+                Hi, &nbsp; I'm &nbsp; Aleksei &nbsp; Zolochevskiy
             </h2>
         </div>
         <div class="header__title margin-top-30">
@@ -65,13 +92,13 @@
 <section class="aboutme" id="section">
     <div class="container">
         <div class="row justify-content-center">
-            <h3 class="title margin-top-70 padding-bottom-10">
+            <h3 id="top" class="title margin-top-70 padding-bottom-10">
                 about me
             </h3>
         </div>
     
-        <div class="row margin-top-60">
-            <div class="col-lg-6 padding-3-rem">
+        <div class="row margin-top-60 margin-top-10-sm">
+            <div class="col-lg-6  padding-3-rem">
                 <div class="about">
                     <div class="about__title">
                             <span class="about__icon">
@@ -157,88 +184,43 @@
     </div>
 </section>
 
-<section style="background-color: #16171f;" class="slills margin-top-100" id="scills">
-    <div class="container">
-        <div class="row justify-content-center margin-bottom-40">
-            <h3 style="color: white;" class="padding-top-70 title  padding-bottom-10">
-                my skills
-            </h3>
-        </div>
-    
-    <div class="row padding-bottom-100">
-        <div class="col-lg-3">
-            <div id="test-circle">
-            </div>
-        </div>
-        <div class="col-lg-3">
-            <div id="test-circle2">
-            </div>
-        </div>
-        <div class="col-lg-3">
-            <div id="test-circle3">
-            </div>
-        </div>
-        <div class="col-lg-3">
-            <div id="test-circle4">
-            </div>
-        </div>
-      
-    </div>
-    </div>
-    
-</section>
-<style>
-    #test-circle {
-        text-align: center;
-    }
+<!--<section style="background-color: #16171f;" class="slills margin-top-100" id="scills">-->
+<!--<div class="container">-->
+<!--<div class="row justify-content-center margin-bottom-40">-->
+<!--<h3 style="color: white;" class="padding-top-70 title  padding-bottom-10">-->
+<!--my skills-->
+<!--</h3>-->
+<!--</div>-->
+<!---->
+<!--<div class="row padding-bottom-100">-->
+<!--<div class="circle-md col-lg-3">-->
+<!--<div id="test-circle">-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="circle-md col-lg-3">-->
+<!--<div id="test-circle2">-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="circle-md col-lg-3">-->
+<!--<div id="test-circle3">-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="circle-md col-lg-3">-->
+<!--<div id="test-circle4">-->
+<!--</div>-->
+<!--</div>-->
 
-    #test-circle:after {
-        color: rgba(255, 255, 255, 0.91);
-        content: "CSS / HTML";
-        text-align: center;
-        font-size: 21px;
-        font-weight: 300;
-    }
-    #test-circle2 {
-        text-align: center;
-    }
+<!--</div>-->
+<!--</div>-->
+<!---->
+<!--</section>-->
 
-    #test-circle2:after {
-        color: rgba(255, 255, 255, 0.91);
-        content: "UI / UX";
-        text-align: center;
-        font-size: 21px;
-        font-weight: 300;
-    }
-    #test-circle3 {
-        text-align: center;
-    }
-
-    #test-circle3:after {
-        color: rgba(255, 255, 255, 0.91);
-        content: "JS / jQuery";
-        text-align: center;
-        font-size: 21px;
-        font-weight: 300;
-    }
-    #test-circle4 {
-        text-align: center;
-    }
-
-    #test-circle4:after {
-        color: rgba(255, 255, 255, 0.91);
-        content: "Communication";
-        text-align: center;
-        font-size: 21px;
-        font-weight: 300;
-    }
-</style>
 
 
 <section class="portfolio margin-bottom-60" id="portfolio">
     <div class="container">
         <div class="row justify-content-center">
-            <h3 class="title margin-top-100 margin-bottom-60 padding-bottom-10">
+            <h3 class="title margin-top-10-sm margin-top-100 margin-bottom-60 padding-bottom-10">
                 portfolio
             </h3>
         </div>
@@ -375,8 +357,8 @@
                 get in touch
             </h3>
         </div>
-        <div class="row">
-            <div class="col-lg-6 offset-3">
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
                 <form class="" action="">
                     <input placeholder="your name" class="input input-name margin-bottom-30" type="text">
                     <input placeholder="your email" class="input margin-bottom-30" type="text">
@@ -385,9 +367,8 @@
                 </form>
             </div>
         </div>
-        <!--<button type="button" style="margin: auto;" class=" text-center btn-submit c-button c-button&#45;&#45;info">SUBMIT-->
         <div class="col-lg-3 margin-auto">
-            <div class="flex dark">
+            <div class="flex">
                 <a href="#" class="bttn-dark">SUBMIT</a>
             </div>
         </div>
@@ -396,9 +377,10 @@
 
 <footer style="background: #16171f; color: rgba(102, 103, 123, 0.78);" class="footer" id="footer">
     <div class="container">
-        <div class="row justify-content-center">
-            <div class="footer__text margin-bottom-60"></div>
+        <div class="row">
+            <div class="col-lg-12 text-center margin-bottom-30">
             © 2018 Zolochevkiy | Markup Developer | Kharkiv | Personal Portfolio
+            </div>
         </div>
     </div>
 </footer>

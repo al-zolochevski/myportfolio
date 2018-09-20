@@ -1,3 +1,4 @@
+@import "abstracts/mixins-responsive";
 .header {
     background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.35)), url("../img/header/header_bg.jpg") no-repeat center top;
     height: 650px;
@@ -18,24 +19,32 @@
 
 .navbar {
     text-transform: uppercase;
-}
 
-.navbar__list {
-    font-weight: 300;
-}
+    &__list {
+        font-weight: 300;
+    }
 
-.navbar__item {
-    padding: 15px;
-    &:hover {
-        color: #2e6fd1;
-        transition: color .3s;
+    &__item {
+        padding: 15px;
+
+        &:hover {
+            color: #2e6fd1;
+            transition: color .3s;
+        }
     }
 }
+
+
 
 .css-typing {
     font-size: 30px;
     font-weight: 300;
     opacity: .8;
+
+    @include respond(phone) {
+        font-size: 25px;
+        margin-bottom: 45px;
+    }
 }
 
 .header__title {
@@ -43,28 +52,47 @@
     font-size: 4rem;
     font-weight: 400;
     text-transform: uppercase;
+
+    @include respond(phone) {
+        font-size: 2rem;
+    }
 }
 
 .social {
 
+    @include respond(phone) {
+        font-size: 22px;
+        margin-top: 35px;
+
+        //&:hover {
+        //    transform: none;
+        //    box-shadow: none;
+        //    background-color: transparent;
+        //}
+    }
+
+    &__item {
+        cursor: pointer;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        width: 2.5rem;
+        height: 2.5rem;
+        border: 3px solid rgba(255, 255, 255, 0.75);
+        opacity: .8;
+        transition: ease .4s;
+
+        &:hover {
+            transform: scale(1.2);
+            opacity: 1;
+            background-color: #2e6fd1;
+            border-color: #2e6fd1;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+
+        }
+    }
 }
 
-.social__item {
-    cursor: pointer;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    width: 2.5rem;
-    height: 2.5rem;
-    border: 3px solid rgba(255, 255, 255, 0.75);
-    opacity: .8;
-    transition: ease .4s;
+.heading {
 
-    &:hover {
-        transform: scale(1.2);
-        opacity: 1;
-        background-color: #2e6fd1;
-        border-color: #2e6fd1;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
-    }
 }
